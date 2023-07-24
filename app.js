@@ -14,5 +14,8 @@ setInterval(() => {
       orderHtml.innerHTML = data.order;
       timeHtml.innerHTML = data.time;
       statusHtml.innerHTML = status;
+      orderHtml.classList.remove("animate-pulse");
+      timeHtml.classList.remove("animate-pulse");
+      statusHtml.classList.remove("animate-pulse");
     });
 }, 1000);
