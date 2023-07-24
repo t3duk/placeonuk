@@ -18,4 +18,4 @@ setInterval(() => {
       timeHtml.classList.remove("animate-pulse");
       statusHtml.classList.remove("animate-pulse");
     });
-}, 1000);
+}, 100);
