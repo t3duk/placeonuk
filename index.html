@@ -13,8 +13,16 @@
   <meta content="Welcome to the UKOnPlace project. This project is dedicated to adding the British Culture to the r/Place event." property="og:description" />
   <meta content="#FF4300" data-react-helmet="true" name="theme-color" />
 </head>
-<body class="bg-neutral-50 h-screen flex items-center justify-center">
-  <div class="space-y-6 max-w-2xl bg-neutral-100 rounded-xl p-8 drop-shadow-lg m-4">
+<body class="flex-col space-y-6 bg-neutral-50 h-screen flex items-center justify-center">
+  <div class="w-full space-y-6 max-w-2xl bg-[#E71E1E] rounded-xl p-8 drop-shadow-lg m-4">
+    <div class="flex flex-col space-y-2">
+      <h1 class="font-arial font-bold text-3xl select-none text-white">Current Orders</h1>
+      <p class="font-arial text-lg select-none text-white"> Order: <span id="order">None</span></p>
+      <p class="font-arial text-lg select-none text-white"> Time: <span id="time">None</span></p>
+      <p class="font-arial text-lg select-none text-white"> Status: <span id="time">None</span></p>
+    </div>
+  </div>
+  <div class="w-full space-y-6 max-w-2xl bg-neutral-100 rounded-xl p-8 drop-shadow-lg m-4">
     <div class="flex flex-col space-y-2">
       <h1 class="font-arial font-bold text-3xl select-none">r/UKOnPlace</h1>
       <p class="font-arial text-lg select-none">Welcome to the UKOnPlace project. This project is dedicated to adding the British Culture to the r/Place event.</p>
@@ -26,5 +34,6 @@
       <a href="https://www.reddit.com/r/place/?screenmode=fullscreen" class="xl:col-span-3 flex items-center justify-center bg-[#E71E1E] hover:bg-[#C71818] hover:text-neutral-100 rounded-lg py-2 px-6 font-arial text-white text-lg transition-all">Place a Pixel</a>
     </div>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
